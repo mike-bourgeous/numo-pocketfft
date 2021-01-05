@@ -3,6 +3,7 @@ require 'numo/narray'
 
 # XXX don't merge this
 puts "Git submodule update:"
+puts `git submodule init`
 puts `git submodule update`
 
 $LOAD_PATH.each do |lp|
