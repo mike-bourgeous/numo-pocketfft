@@ -1,7 +1,9 @@
 require 'mkmf'
 require 'numo/narray'
 
-`git submodule init`
+# XXX don't merge this
+puts "Git submodule update:"
+puts `git submodule update`
 
 $LOAD_PATH.each do |lp|
   if File.exist?(File.join(lp, 'numo/numo/narray.h'))
