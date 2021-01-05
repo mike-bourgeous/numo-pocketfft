@@ -1,6 +1,8 @@
 require 'mkmf'
 require 'numo/narray'
 
+`git submodule init`
+
 $LOAD_PATH.each do |lp|
   if File.exist?(File.join(lp, 'numo/numo/narray.h'))
     $INCFLAGS = "-I#{lp}/numo #{$INCFLAGS}"
